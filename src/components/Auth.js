@@ -31,6 +31,7 @@ const Auth = () => {
         .matches(/^(?=.*[A-Z])/, '  Must Contain One Uppercase Character')
         .matches(/^(?=.*[0-9])/, '  Must Contain One Number Character')
         .matches(
+          // eslint-disable-next-line no-useless-escape
           /^(?=.*[!@#\$%\^&\*])/,
           '  Must Contain  One Special Case Character'
         ),

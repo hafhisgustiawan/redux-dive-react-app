@@ -12,7 +12,7 @@ const counterSlice = createSlice({
       state.counter--;
     },
     increase: (state, action) => {
-      state.counter += action.payload; // payload ini default namanya
+      state.counter += action.payload; // payload ini default namanya, isinya bisa aja array atau object, cara gunakannya cek component/Counter.js
     },
     toggleCounter: (state) => {
       state.showCounter = !state.showCounter;

@@ -28,7 +28,7 @@ const Counter = () => {
   };
 
   const increaseHandler = () => {
-    dispatch(increase(5));
+    dispatch(increase(5)); // params disini adalah payload yang akan dikirim ke slice redux
   };
 
   const toggleCounterHandler = () => {
